@@ -24,9 +24,3 @@
 - [ ] :broken_heart: Breaking change
 - [X] 📚 Documentation
 - [ ] 😉 Chore (no effect on production code)
-
-
-09:00
-12:15
-13:51
-18:00
