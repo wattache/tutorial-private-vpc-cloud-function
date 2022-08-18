@@ -1,9 +1,6 @@
-# tutorial-cloud-workflow-bigquery
-Chain your data transformations with BigQuery, Cloud Workflow and Cloud Function.
+# Tutorial Private VPC  and Cloud Function connection
 
-## I - Useful links
-
-- Kaggle data used to feed CloudSQL table : https://www.kaggle.com/datasets/ankanhore545/100-highest-valued-unicorns
+Connect your Cloud Function instance to a VPC network through a VPC Serverless Access Connector.
 
 ## II - Setup
 
@@ -15,11 +12,6 @@ In your GCP project, enable the following APIs :
 | Serverless VPC Access API                 | vpcaccess.googleapis.com                  |
 | Cloud Functions API                       | cloudfunctions.googleapis.com             |
 | Cloud Build API                           | cloudbuild.googleapis.com                 |
-| Cloud Build API                           | cloudbuild.googleapis.com                 |
-| Cloud Build API                           | cloudbuild.googleapis.com                 |
-| Cloud Build API                           | cloudbuild.googleapis.com                 |
-
-
 
 Initiate your ```gcloud``` SDK configuration :
 ```sh
@@ -73,8 +65,8 @@ gcloud projects add-iam-policy-binding ${PROJECT_ID} \
     --role="roles/vpcaccess.admin"
 ```
 
-:warning: This does not respect the least-priviledges principle. If you want to respect it, do not do these bindings, apply Terraform
-and add the required permissions to a custom role. Do not hesitate to open a PR to improve this. :warning:
+:warning: This does not respect the least-priviledges principle. If you want to respect it, do not do this last binding, apply Terraform
+and add the required permissions to the custom role. Do not hesitate to open a PR to improve this. :warning:
 
 Export the so called ```GOOGLE_APPLICATION_CREDENTIALS``` environment variable to match your created key file :
 ```sh
