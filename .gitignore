@@ -1,0 +1,17 @@
+my-key.json
+src.zip
+
+########## Visual Studio Code ##########
+
+
+########## Terraform ##########
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+
+# Local lock
+**/.terraform.lock.hcl

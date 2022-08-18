@@ -1,0 +1,26 @@
+title: "Terraform Builder"
+description: "Custome role used to deploy workflow pipeline and subsequents."
+stage: "ALPHA"
+includedPermissions:
+- cloudfunctions.functions.create
+- cloudfunctions.functions.delete
+- cloudfunctions.functions.get
+- cloudfunctions.operations.get
+- compute.networks.create
+- compute.networks.delete
+- compute.networks.get
+- compute.networks.updatePolicy
+- compute.subnetworks.create
+- compute.subnetworks.delete
+- compute.subnetworks.get
+- iam.serviceAccounts.create
+- iam.serviceAccounts.delete
+- iam.serviceAccounts.get
+- iam.serviceAccounts.getIamPolicy
+- iam.serviceAccounts.setIamPolicy
+- storage.buckets.create
+- storage.buckets.delete
+- storage.buckets.get
+- storage.objects.create
+- storage.objects.delete
+- storage.objects.get
